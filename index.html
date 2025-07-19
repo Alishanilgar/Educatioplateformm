@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digital Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+      <img src="2.jpg" alt="Website Logo" class="logo">
+        <nav>
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#lessons">Lessons</a>
+                <a href="#quizzes">Quizzes</a>
+                <a href="#videos">Videos</a>
+                <a href="#interaction">Interaction</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>DIGITAL EDUCATION PLATFORMS</h2>
+            <p>Interactive lessons, quizzes, and video content for all educational levels.</p>
+            <a href="#lessons" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="lessons">
+        <div class="content">
+            <h2>Interactive Lessons</h2>
+            <p>Our platform offers interactive lessons designed to engage students and enhance their understanding of various subjects.</p>
+            <div class="lessons-list">
+                <div class="lesson-item">
+                    <h3>Mathematics</h3>
+                    <p>Explore our range of math lessons, from basic arithmetic to advanced algebra and geometry.</p>
+                </div>
+                <div class="lesson-item">
+                    <h3>Science</h3>
+                    <p>Engage with our interactive science content that covers topics in physics, chemistry, and biology.</p>
+                </div>
+                <div class="lesson-item">
+                    <h3>History</h3>
+                    <p>Dive into our history lessons to explore key events, figures, and civilizations from around the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quizzes">
+        <div class="content">
+            <h2>Mathematics Quiz</h2>
+            <form id="math-quiz-form">
+                <div class="question">
+                  <p>1. What is 5 + 3?</p>
+                  <label>
+                    <input type="radio" name="q1" value="6"> 6
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="7"> 7
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="8"> 8
+                  </label>
+                </div>
+        
+                <div class="question">
+                  <p>2. What is 9 x 6?</p>
+                  <label>
+                    <input type="radio" name="q2" value="54"> 54
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="56"> 56
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="58"> 58
+                  </label>
+                </div>
+        
+                <div class="question">
+                  <p>3. What is the square root of 16?</p>
+                  <label>
+                    <input type="radio" name="q3" value="2"> 2
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="3"> 3
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="4"> 4
+                  </label>
+                </div>
+        
+                <button type="submit">Submit</button>
+              </form>
+              <div id="result"></div>
+
+            <h2>Science Quiz</h2>
+            <form id="science-quiz-form">
+                <div class="question">
+                  <p>1. What is the chemical symbol for water?</p>
+                  <label>
+                    <input type="radio" name="q1" value="H2O"> H2O
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="CO2"> CO2
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="O2"> O2
+                  </label>
+                </div>
+        
+                <div class="question">
+                  <p>2. What planet is known as the Red Planet?</p>
+                  <label>
+                    <input type="radio" name="q2" value="Mars"> Mars
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="Venus"> Venus
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="Saturn"> Saturn
+                  </label>
+                </div>
+        
+                <div class="question">
+                  <p>3. What gas do plants need for photosynthesis?</p>
+                  <label>
+                    <input type="radio" name="q3" value="Oxygen"> Oxygen
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="Carbon Dioxide"> Carbon Dioxide
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="Nitrogen"> Nitrogen
+                  </label>
+                </div>
+        
+                <button type="submit">Submit</button>
+              </form>
+              <div id="result-science"></div>
+
+            <h2>History Quiz</h2>
+            <form id="history-quiz-form">
+                <div class="question">
+                  <p>1. Who was the first President of the United States?</p>
+                  <label>
+                    <input type="radio" name="q1" value="George Washington"> George Washington
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="Abraham Lincoln"> Abraham Lincoln
+                  </label>
+                  <label>
+                    <input type="radio" name="q1" value="Thomas Jefferson"> Thomas Jefferson
+                  </label>
+                </div>
+        
+                <div class="question">
+                  <p>2. In what year did World War II end?</p>
+                  <label>
+                    <input type="radio" name="q2" value="1945"> 1945
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="1940"> 1940
+                  </label>
+                  <label>
+                    <input type="radio" name="q2" value="1950"> 1950
+                  </label>
+                </div>
+        
+                <div class="question">
+                  <p>3. Who discovered America?</p>
+                  <label>
+                    <input type="radio" name="q3" value="Christopher Columbus"> Christopher Columbus
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="Vasco da Gama"> Vasco da Gama
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="Ferdinand Magellan"> Ferdinand Magellan
+                  </label>
+                </div>
+        
+                <button type="submit">Submit</button>
+              </form>
+              <div id="result-history"></div>
+
+        </div>
+    </section>
+    <section id="videos">
+      <div class="content">
+          <h2>Video Lessons</h2>
+          <p>Watch video lessons created by expert educators covering various subjects at different levels.</p>
+          <div class="video-list">
+              <div class="video-item">
+                <h3>Science Video</h3>
+                  <iframe width="310" height="320"
+                  src="https://www.youtube.com/embed/tJZNlj2pL8A?si=5Vbeeh1ck0W5rQoG?autoplay=1&mute=1">
+                  </iframe>
+                  
+              </div>
+              <div class="video-item">
+                  <h3>Mathematics Video</h3>
+                  <iframe width="310" height="320"
+                  src="https://www.youtube.com/embed/0rk-sKU7sRo?si=6GpkNUlBVNUip7sz?autoplay=1&mute=1">
+                  </iframe>
+
+              </div>
+              <div class="video-item">
+                <h3>History Video</h3>
+                  <iframe width="310" height="320"
+                  src="https://www.youtube.com/embed/17xCC1eMNdw?si=w7vBdPAO_yZgUbpx?autoplay=1&mute=1">
+                  </iframe>
+
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="interaction">
+    <div class="content">
+        <h2>Teacher-Student Interaction</h2>
+        <p>Communicate with teachers and fellow students through our messaging and discussion boards.</p>
+        <div class="interaction-features">
+            <div class="feature-item" id="live-chat">
+                <h3>Live Chat</h3>
+                <p>Get real-time assistance from teachers via our integrated chat feature.</p>
+                <button onclick="startChat()">Start Chat</button>
+                <div id="chat-box" style="display:none;">
+                    <div id="messages"></div>
+                    <input type="text" id="chat-input" placeholder="Type your message here" />
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+            <div class="feature-item" id="discussion-board">
+                <h3>Discussion Boards</h3>
+                <p>Engage in discussions with peers and teachers on various topics related to the lessons.</p>
+                <button onclick="showDiscussion()">Join Discussion</button>
+                <div id="discussion-section" style="display:none;">
+                    <textarea id="discussion-input" placeholder="Enter your comment"></textarea>
+                    <button onclick="postComment()">Post Comment</button>
+                    <div id="discussion-comments"></div>
+                </div>
+            </div>
+            <div class="feature-item" id="assignment-submission">
+                <h3>Assignment Submission</h3>
+                <p>Submit your assignments directly through the platform and receive feedback from your teachers.</p>
+                <button onclick="submitAssignment()">Submit Assignment</button>
+                <div id="assignment-form" style="display:none;">
+                    <input type="file" id="assignment-file" />
+                    <button onclick="uploadAssignment()">Upload</button>
+                </div>
+                <div id="submission-status"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Function to handle live chat functionality
+    function startChat() {
+        var chatBox = document.getElementById('chat-box');
+        chatBox.style.display = chatBox.style.display === 'none' ? 'block' : 'none';
+    }
+
+    // Mock function for sending a chat message
+    function sendMessage() {
+        var message = document.getElementById('chat-input').value;
+        var messages = document.getElementById('messages');
+        
+        if (message.trim() !== '') {
+            var newMessage = document.createElement('div');
+            newMessage.textContent = 'You: ' + message;
+            messages.appendChild(newMessage);
+            document.getElementById('chat-input').value = ''; // Clear the input
+        }
+    }
+
+    // Function to display the discussion board section
+    function showDiscussion() {
+        var discussionSection = document.getElementById('discussion-section');
+        discussionSection.style.display = discussionSection.style.display === 'none' ? 'block' : 'none';
+    }
+
+    // Mock function for posting a discussion comment
+    function postComment() {
+        var commentInput = document.getElementById('discussion-input');
+        var commentsSection = document.getElementById('discussion-comments');
+
+        if (commentInput.value.trim() !== '') {
+            var newComment = document.createElement('div');
+            newComment.textContent = 'You: ' + commentInput.value;
+            commentsSection.appendChild(newComment);
+            commentInput.value = ''; // Clear the input
+        }
+    }
+
+    // Function to display the assignment submission form
+    function submitAssignment() {
+        var assignmentForm = document.getElementById('assignment-form');
+        assignmentForm.style.display = assignmentForm.style.display === 'none' ? 'block' : 'none';
+    }
+
+    // Mock function for assignment submission
+    function uploadAssignment() {
+        var fileInput = document.getElementById('assignment-file');
+        var submissionStatus = document.getElementById('submission-status');
+
+        if (fileInput.files.length > 0) {
+            submissionStatus.textContent = 'Assignment submitted successfully!';
+        } else {
+            submissionStatus.textContent = 'Please upload an assignment file.';
+        }
+    }
+</script>
+
+
+    <script>
+        // Handle Mathematics Quiz
+        document.getElementById("math-quiz-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let score = 0;
+
+            if (document.querySelector('input[name="q1"]:checked')?.value === "8") {
+                score++;
+            }
+            if (document.querySelector('input[name="q2"]:checked')?.value === "54") {
+                score++;
+            }
+            if (document.querySelector('input[name="q3"]:checked')?.value === "4") {
+                score++;
+            }
+
+            document.getElementById("result").innerText = You scored ${score}/3 in Mathematics!;
+        });
+
+        // Handle Science Quiz
+        document.getElementById("science-quiz-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let score = 0;
+
+            if (document.querySelector('input[name="q1"]:checked')?.value === "H2O") {
+                score++;
+            }
+            if (document.querySelector('input[name="q2"]:checked')?.value === "Mars") {
+                score++;
+            }
+            if (document.querySelector('input[name="q3"]:checked')?.value === "Carbon Dioxide") {
+                score++;
+            }
+
+            document.getElementById("result-science").innerText = You scored ${score}/3 in Science!;
+        });
+
+        // Handle History Quiz
+        document.getElementById("history-quiz-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let score = 0;
+
+            if (document.querySelector('input[name="q1"]:checked')?.value === "George Washington") {
+                score++;
+            }
+            if (document.querySelector('input[name="q2"]:checked')?.value === "1945") {
+                score++;
+            }
+            if (document.querySelector('input[name="q3"]:checked')?.value === "Christopher Columbus") {
+                score++;
+            }
+
+            document.getElementById("result-history").innerText = You scored ${score}/3 in History!;
+        });
+    </script>
+</body>
+</html>

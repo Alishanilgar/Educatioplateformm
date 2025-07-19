@@ -1,0 +1,462 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F7FA; /* Softer background */
+  color: #2C3E50; /* Deep Grayish Blue text */
+  line-height: 1.6;
+}
+.content p{
+  color:#27445D;
+  font-size: 25px;
+}
+.nav-links a{
+  color: #F5F7FA;
+  background-color: #F5F7FA;
+}
+nav{
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color:white;
+  font-size: 25px;
+  color:#FFFFFF;
+
+}
+
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: #4A90E2; /* Sky Blue for headings */
+}
+
+a {
+  text-decoration: none;
+  color: #FF6F61; /* Coral for links */
+  transition: color 0.3s ease;
+}
+.hero h3{
+  color: skyblue;
+}
+
+a:hover {
+  color: #F8B400; /* Amber Yellow on hover */
+}
+/* styles.css */
+.logo {
+  width: 150px; /* Adjust the width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures no space below the image */
+  margin: 20px; /* Add space around the logo */
+}
+
+
+button {
+  background-color: #4A90E2; /* Sky Blue for buttons */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ABD; /* Darker Blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Header styles */
+header {
+  background-color: skyblue; /* Deep Grayish Blue header */
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .nav-links a {
+  padding: 10px 15px;
+  background-color: #2C3E50;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+header .nav-links a:hover {
+  background-color: #619eff; /* Coral hover for nav links */
+}
+
+/* Hero Section */
+.hero {
+  background-image:url(1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  background-color:skyblue;
+  color:#F5F7FA
+  
+  
+}
+.hero a{
+  color:black;
+}
+
+.hero .btn {
+  font-size: 20px;
+  padding: 14px 32px;
+  background-color: #A1E3F9; /* Coral button */
+}
+.hero p{
+  color:whitesmoke;
+  font-size: 35px;
+}
+
+.hero .btn:hover {
+  background-color: white; /* Amber Yellow on hover */
+  transform: translateY(-2px);
+}
+
+/* Section styles */
+section {
+  padding: 70px 20px;
+  background-color: #FFFFFF; /* White section */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+section:nth-of-type(even) {
+  background-color: #F5F7FA; /* Light gray for alternate sections */
+}
+
+.content h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #4A90E2; /* Sky Blue for section headings */
+}
+
+.lessons-list, .video-list, .interaction-features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.lesson-item, .video-item, .feature-item {
+  background-image: url(w.jpg); /* Amber Yellow */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #3674B5;
+  background-color: #357ABD;
+}
+
+.lesson-item:hover, .video-item:hover, .feature-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lesson-item h3, .video-item h3, .feature-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2C3E50; /* Deep Grayish Blue for titles */
+}
+
+/* Quizzes */
+/* Style for the section container */
+#quizzes {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for headings */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style for quiz forms */
+form {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for questions */
+.question {
+  margin-bottom: 20px;
+}
+
+.question p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Style for radio buttons and labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style for result sections */
+#result, #result-science, #result-history {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #28a745; /* Green color for results */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .question p, label {
+      font-size: 16px;
+  }
+
+  button[type="submit"] {
+      width: 100%;
+  }
+}
+
+
+/* Footer */
+footer {
+  background-color: #2C3E50;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+label {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.2); /* Makes the radio buttons bigger */
+  background-color: #007BFF;
+}
+
+/* Optional: Add color when hovering on label */
+label:hover {
+  color: #007BFF;
+}
+.content h2{
+  color:whitesmoke;
+  background-color: rgb(99, 99, 189);
+}
+.question p {
+  font-size: 18px;
+  color: #333; /* Dark gray for the question text */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style the labels */
+label {
+  display: block;
+  font-size: 16px;
+  color: #555; /* Medium gray for the label text */
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* Change color of label text when hovering */
+label:hover {
+  color: #007BFF; /* Blue color on hover */
+}
+
+/* Style the radio buttons */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Optional: Add custom color for selected radio buttons */
+input[type="radio"]:checked + label {
+  color: #28a745; /* Green color for selected option */
+}
+
+/* Style for the section container */
+#interaction {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* General styles for headings */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+/* Styles for feature items */
+.feature-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Chat box styles */
+#chat-box {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+#messages {
+  height: 100px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#chat-input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#chat-box button {
+  padding: 8px 12px;
+}
+
+/* Discussion board styles */
+#discussion-section {
+  margin-top: 10px;
+}
+
+#discussion-input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+#discussion-comments {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* Assignment submission styles */
+#assignment-form {
+  margin-top: 10px;
+}
+
+#assignment-file {
+  margin-bottom: 10px;
+}
+
+#submission-status {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}
+
+/* Media Query for responsive design */
+@media (max-width: 768px) {
+  #chat-input, #discussion-input {
+      width: 100%;
+  }
+
+  button {
+      width: 100%;
+      margin-top: 10px;
+  }
+}
